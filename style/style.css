@@ -11,6 +11,13 @@ header {
   top: 0%;
 }
 
+.bkr{
+  background-color: #839660;
+}
+
+.nav-link{
+  color: #000000;
+}
 
 nav {
   background-color: #839660;
@@ -19,7 +26,6 @@ nav {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
 }
-
 
 .nav-menu {
   color: black;
@@ -110,8 +116,6 @@ main {
   justify-content: center;
   flex-direction: column;
 }
-
-
 
 .item-container {
   display: flex;
@@ -329,8 +333,13 @@ footer {
 .nav-menu ul{
   flex-direction: row;
 }
+
+.sugerencias-img{
+  flex-direction: row ;
+}
 .item-container {
   display: flex;
+  flex-direction: row;
   max-width: 100%;
 }
 }
