@@ -1,0 +1,98 @@
+.sabores-main-container {
+  border: solid rgb(255, 255, 255) 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 30px;
+  text-align: start;
+  list-style: none;
+  display: grid;
+
+  .imagenes {
+    height: 400px;
+
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      margin: 0;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    @include flex-x-center();
+    margin: 0 auto;
+
+    .text-h2,
+    .text-h2 ul {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .text-container,
+  .text-container li,
+  .text-container-pastas ul {
+    text-align: start;
+    list-style: none;
+  }
+}
+
+.encontrar-text,
+.todo-complementos {
+  margin: 30px auto 30px auto;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+.text-container-pastas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "pastas  pastas"
+    "clasico mensual";
+  column-gap: 50px;
+  margin-left: 10px;
+}
+
+.text-h2-pastas {
+  grid-area: pastas;
+}
+
+.container-grid1 {
+  grid-area: clasico;
+}
+
+.container-grid2 {
+  grid-area: mensual;
+}
+
+
+
+
+
+.interior-img img {
+  width: 40%;
+  height: auto;
+  border: wheat solid 10px;
+  border-radius: 5%;
+  margin-top: 30px;
+}
+
+@media (min-width: 677px) {
+
+  .sabores-main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .imagenes {
+    @include flex-x-center();
+    display: flex;
+  }
+}
+
+@mixin flex-x-center {
+  justify-content: center;
+}

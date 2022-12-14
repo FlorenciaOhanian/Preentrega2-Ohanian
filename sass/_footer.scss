@@ -1,0 +1,16 @@
+.footer {
+  background-color: #839660;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
+
+  .icono-footer {
+    margin-left: 2%;
+
+    img {
+      display: inline-block;
+    }
+  }
+}
