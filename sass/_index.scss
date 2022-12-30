@@ -22,8 +22,6 @@ main {
         }
     }
 
-
-
     .eslogan-sec {
         margin: 10px 0 10px 0;
 
@@ -107,6 +105,38 @@ main {
         }
     }
 
+    .preguntas-frec {
+        width: 90vw;
+        margin: 0 auto;
+        border-radius: 30px;
+
+        .accordion-button  {
+            color: #060606;
+            
+        }
+        .accordion-button:not(.collapsed){
+            background-color:  #839660cf !important;
+            color: black;
+        }
+        .accordion-button:focus{
+            border-color: #060606 !important;
+            box-shadow: none;
+        }
+        .accordion-body {
+            background-color: #f8f6f2;
+            code {
+                color: black;
+                ul {
+                    li {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: black;
+                }
+                }
+            }
+        }
+    }
+
     .contactanos-index {
         width: 50%;
         margin: 20px auto 20px auto;
@@ -127,6 +157,7 @@ main {
                 flex-direction: row;
                 max-width: 100%;
                 width: 100%;
+
                 .sugerencia-item {
                     .sugerencias-img {
                         img {

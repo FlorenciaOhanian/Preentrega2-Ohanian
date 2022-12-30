@@ -31,6 +31,7 @@ nav {
     color: black;
     display: flex;
     width: 70%;
+    justify-content: flex-end;
 }
 
 .nav-menu ul {
@@ -72,12 +73,13 @@ body {
     .header {
         display: flex;
         flex-direction: column;
-        
     }
 }
 
 @media (min-width: 1024px) {
+
     .nav-menu ul {
         flex-direction: row;
+        margin-right: 0 !important;
     }
 }

@@ -31,6 +31,7 @@ nav {
   color: black;
   display: flex;
   width: 70%;
+  justify-content: flex-end;
 }
 
 .nav-menu ul {
@@ -80,6 +81,7 @@ body {
 @media (min-width: 1024px) {
   .nav-menu ul {
     flex-direction: row;
+    margin-right: 0 !important;
   }
 }
 .logo-blanco {
@@ -173,6 +175,33 @@ main .video-container .video-text {
   font-family: "roboto";
   margin: 20px auto 20px auto;
   font-weight: bold;
+}
+main .preguntas-frec {
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+main .preguntas-frec .accordion-button {
+  color: #060606;
+}
+main .preguntas-frec .accordion-button:not(.collapsed) {
+  background-color: rgba(131, 150, 96, 0.8117647059) !important;
+  color: black;
+}
+main .preguntas-frec .accordion-button:focus {
+  border-color: #060606 !important;
+  box-shadow: none;
+}
+main .preguntas-frec .accordion-body {
+  background-color: #f8f6f2;
+}
+main .preguntas-frec .accordion-body code {
+  color: black;
+}
+main .preguntas-frec .accordion-body code ul li {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 main .contactanos-index {
   width: 50%;
@@ -274,8 +303,24 @@ main .contactanos-index {
     display: flex;
   }
 }
-.contacto-text {
+.description-container {
+  position: relative;
+}
+.description-container .fondo {
+  width: 120vw;
+  background-color: rgba(131, 150, 96, 0.137254902);
+  height: 12rem;
+  position: absolute;
+  top: 21%;
+  left: -36px;
+  rotate: -12deg;
+}
+.description-container .contenido-container {
+  position: relative;
+}
+.description-container .contenido-container .contacto-text {
   margin-top: 30px;
+  border-radius: 5px solid white;
 }
 
 .contacto-text,
@@ -300,22 +345,59 @@ main .contactanos-index {
   position: absolute;
   left: 0;
   width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .formulario img {
+    height: auto;
+  }
+}
+h3 {
+  margin: 40px auto;
 }
 
 .quienes-somos {
   font-family: "roboto";
-  margin: 50px 30px;
-}
-.quienes-somos h2 {
-  margin-bottom: 20px;
-}
-
-.luli-img img {
-  width: 300px;
+  margin: 50px auto;
+  display: grid;
+  width: 100%;
   height: auto;
-  margin: 10px 60px 10px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+  grid-template-areas: " empresa luli-img  durante" " agustin-img  atendemos   ravioles ";
+}
+.quienes-somos .empresa {
+  background-color: rgba(131, 150, 96, 0.3294117647);
+  display: flex;
+  align-items: center;
+}
+.quienes-somos .durante {
+  background-color: rgba(128, 128, 128, 0.39);
+  display: flex;
+  align-items: center;
+}
+.quienes-somos .atendemos {
+  display: flex;
+  align-items: center;
+}
+.quienes-somos .luli-img img,
+.quienes-somos .agustin-img img,
+.quienes-somos .ravioles-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 576px) {
+  .quienes-somos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "text-quienes-1" "luli-img" "empresa" "durante" "atendemos" "agustin-img ";
+  }
+}
 .footer {
   background-color: #839660;
   color: white;

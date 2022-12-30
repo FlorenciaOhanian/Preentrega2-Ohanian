@@ -1,14 +1,62 @@
-.quienes-somos {
-  font-family: "roboto";
-  margin: 50px 30px;
-
-  h2 {
-    margin-bottom: 20px;
+  h3{
+    margin: 40px auto;
   }
+
+  .quienes-somos {
+  font-family: "roboto";
+  margin: 50px auto;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+  grid-template-areas:
+    " empresa luli-img  durante"
+    " agustin-img  atendemos   ravioles ";
+
+
+  .empresa {
+    background-color:#83966054;
+    display: flex;
+    align-items: center;
+  }
+
+  .durante{
+    background-color: rgba(128, 128, 128, 0.39);
+    display: flex;
+    align-items: center;
+  }
+
+  .atendemos{
+    display: flex;
+    align-items: center;
+  }
+
+  .luli-img,
+  .agustin-img,
+  .ravioles-img {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
 }
 
-.luli-img img {
-  width: 300px;
-  height: auto;
-  margin: 10px 60px 10px auto;
+
+@media (max-width: 576px) {
+  .quienes-somos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+      "text-quienes-1"
+      "luli-img"
+      "empresa"
+      "durante"
+      "atendemos"
+      "agustin-img "
+  }
 }

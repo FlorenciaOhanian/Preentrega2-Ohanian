@@ -1,6 +1,28 @@
-.contacto-text {
-  margin-top: 30px;
+.description-container {
+  position: relative;
+
+  .fondo {
+    width: 120vw;
+    background-color: #83966023;
+    height: 12rem;
+    position: absolute;
+    top: 21%;
+    left: -36px;
+    rotate: -12deg;
+  }
+
+  .contenido-container {
+    position: relative;
+
+    .contacto-text {
+
+      margin-top: 30px;
+      border-radius: 5px solid white;
+    }
+  }
+
 }
+
 
 .contacto-text,
 .direccion,
@@ -24,5 +46,15 @@
     position: absolute;
     left: 0;
     width: 100%;
+    height: 100%;
   }
+}
+
+@media (min-width: 1024px) {
+  .formulario {
+    img {
+      height: auto;
+    }
+  }
+
 }
