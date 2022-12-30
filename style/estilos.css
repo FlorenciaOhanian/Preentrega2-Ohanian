@@ -186,13 +186,13 @@ main .contactanos-index {
 }
 
 @media (min-width: 1024px) {
-  .sugerencias-img {
-    flex-direction: row;
-  }
-  .item-container {
-    display: flex;
+  main .sugerencias .item-container {
     flex-direction: row;
     max-width: 100%;
+    width: 100%;
+  }
+  main .sugerencias .item-container .sugerencia-item .sugerencias-img img {
+    width: 100%;
   }
 }
 .sabores-main-container {
@@ -203,9 +203,6 @@ main .contactanos-index {
   text-align: start;
   list-style: none;
   display: grid;
-}
-.sabores-main-container .imagenes {
-  height: 400px;
 }
 .sabores-main-container .imagenes img {
   width: 400px;
@@ -218,8 +215,7 @@ main .contactanos-index {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .sabores-main-container .text-container .text-h2,
 .sabores-main-container .text-container .text-h2 ul {
@@ -231,6 +227,7 @@ main .contactanos-index {
 .sabores-main-container .text-container-pastas ul {
   text-align: start;
   list-style: none;
+  margin-top: 20px;
 }
 
 .encontrar-text,
@@ -275,7 +272,6 @@ main .contactanos-index {
   }
   .imagenes {
     display: flex;
-    justify-content: center;
   }
 }
 .contacto-text {
@@ -291,10 +287,19 @@ main .contactanos-index {
 .rowg-3 {
   width: 80vw;
   margin: 0 auto;
+  position: relative;
+  padding: 25px 0;
 }
 
-.formulario{
+.formulario {
   margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.formulario img {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .quienes-somos {

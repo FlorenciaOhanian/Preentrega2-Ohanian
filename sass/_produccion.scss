@@ -8,8 +8,6 @@
   display: grid;
 
   .imagenes {
-    height: 400px;
-
     img {
       width: 400px;
       height: 400px;
@@ -22,8 +20,7 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    @include flex-x-center();
-    margin: 0 auto;
+    margin: 20px  auto;
 
     .text-h2,
     .text-h2 ul {
@@ -37,6 +34,7 @@
   .text-container-pastas ul {
     text-align: start;
     list-style: none;
+    margin-top: 20px;
   }
 }
 
@@ -88,7 +86,6 @@
   }
 
   .imagenes {
-    @include flex-x-center();
     display: flex;
   }
 }

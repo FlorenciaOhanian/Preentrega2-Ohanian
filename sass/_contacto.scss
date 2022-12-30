@@ -11,8 +11,18 @@
 .rowg-3 {
   width: 80vw;
   margin: 0 auto;
+  position: relative;
+  padding: 25px 0;
 }
 
-.formulario{
+.formulario {
   margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
 }
