@@ -10,6 +10,9 @@ header {
   top: 0%;
   z-index: 999;
 }
+header .navbar-toggler {
+  background-color: whitesmoke;
+}
 
 .nav-link {
   color: #000000;
@@ -268,10 +271,8 @@ main .contactanos-index {
 
 .text-container-pastas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "pastas  pastas" "clasico mensual";
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  grid-template-rows: 0fr 2fr 2fr;
+  grid-template-areas: "pastas" "clasico " "mensual";
   margin-left: 10px;
 }
 
@@ -297,7 +298,7 @@ main .contactanos-index {
 
 @media (min-width: 677px) {
   .sabores-main-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
   .imagenes {
     display: flex;
@@ -305,6 +306,7 @@ main .contactanos-index {
 }
 .description-container {
   position: relative;
+  overflow-x: hidden;
 }
 .description-container .fondo {
   width: 120vw;

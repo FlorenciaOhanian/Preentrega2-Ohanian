@@ -1,6 +1,6 @@
 .description-container {
   position: relative;
-
+overflow-x: hidden;
   .fondo {
     width: 120vw;
     background-color: #83966023;
@@ -20,7 +20,6 @@
       border-radius: 5px solid white;
     }
   }
-
 }
 
 
@@ -56,5 +55,4 @@
       height: auto;
     }
   }
-
 }

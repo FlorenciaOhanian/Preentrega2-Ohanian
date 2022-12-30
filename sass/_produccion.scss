@@ -46,12 +46,12 @@
 }
 
 .text-container-pastas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+display: grid;
+  grid-template-rows: 0fr 2fr 2fr;
   grid-template-areas:
-    "pastas  pastas"
-    "clasico mensual";
-  column-gap: 50px;
+    "pastas"
+    "clasico "
+    "mensual";  
   margin-left: 10px;
 }
 
@@ -68,9 +68,6 @@
 }
 
 
-
-
-
 .interior-img img {
   width: 40%;
   height: auto;
@@ -82,7 +79,7 @@
 @media (min-width: 677px) {
 
   .sabores-main-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .imagenes {
